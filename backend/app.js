@@ -32,7 +32,7 @@ MongoClient.connect(url,
                 try{
                     const user=req.body;
                     const result = await db.collection('studata').insertOne(user);
-                    res.send({ message: 'blogdata created successfully'});
+                    res.send({ message: 'student signup successfully'});
                 }catch(err) {
                     res.status(500).send({ message: 'error creating user'});
                 }
